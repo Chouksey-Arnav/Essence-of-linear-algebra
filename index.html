@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Blue1Brown - Essence of Linear Algebra Viewer</title>
+    <title>3Blue1Brown - Essence of Linear Algebra Full Course</title>
     <style>
         :root {
             --bg-color: #0f0f0f;
@@ -40,18 +40,19 @@
         p {
             color: var(--text-secondary);
             font-size: 1.1rem;
+            line-height: 1.5;
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 30px;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             padding-bottom: 50px;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 450px) {
             .video-grid {
                 grid-template-columns: 1fr;
             }
@@ -64,6 +65,11 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             display: flex;
             flex-direction: column;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
         }
 
         .video-container {
@@ -90,10 +96,11 @@
         }
 
         .video-title {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 600;
             margin: 0 0 15px 0;
             line-height: 1.4;
+            color: #fff;
         }
 
         .youtube-link {
@@ -102,7 +109,7 @@
             color: var(--accent-color);
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             border: 1px solid var(--accent-color);
             padding: 8px 16px;
             border-radius: 6px;
@@ -119,11 +126,41 @@
 <body>
 
     <header>
-        <h1>Essence of Linear Algebra</h1>
-        <p>Chapters 3 to 10 by 3Blue1Brown. Watch embedded below or click the links to open directly on YouTube.</p>
+        <h1>The Essence of Linear Algebra</h1>
+        <p>A complete visual exploration of geometric vector spaces, transformations, and matrices by 3Blue1Brown. Watch directly on this page or follow the links to jump to YouTube.</p>
     </header>
 
     <main class="video-grid">
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/kjBOesZCoqc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Essence of Linear Algebra - Preview</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=kjBOesZCoqc" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/fNk_zzaMoSs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Vectors | Chapter 1</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=fNk_zzaMoSs" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/k7RM-ot2NWY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Linear combinations, span, and basis vectors | Chapter 2</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=k7RM-ot2NWY" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
 
         <div class="video-card">
             <div class="video-container">
@@ -202,6 +239,56 @@
             <div class="video-info">
                 <h2 class="video-title">Cross products | Chapter 10</h2>
                 <a class="youtube-link" href="http://www.youtube.com/watch?v=eu6i7WJeMiw" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/BaM7OCEm3G0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Cross products in the light of linear transformations | Chapter 11</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=BaM7OCEm3G0" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/jBsC34PxzoM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Cramer's rule, explained geometrically | Chapter 12</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=jBsC34PxzoM" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/P2LTAUO1TdA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Change of basis | Chapter 13</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=P2LTAUO1TdA" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/PFDu9oVAE-g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Eigenvectors and eigenvalues | Chapter 14</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=PFDu9oVAE-g" target="_blank">Watch on YouTube →</a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/e50Bj7X6vNo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">A quick trick for computing eigenvalues | Chapter 15</h2>
+                <a class="youtube-link" href="http://www.youtube.com/watch?v=e50Bj7X6vNo" target="_blank">Watch on YouTube →</a>
             </div>
         </div>
 
